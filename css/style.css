@@ -1,8 +1,51 @@
 /****** General ***********/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Tilt+Prism&display=swap');
 * {
     font-family: 'Raleway', sans-serif;
 }
+* {
+    border : 1px solid orange; 
+ }
+ /* Ajout de bordures pour m'aider avec les marges, à supprimer ensuite */
+.top-header {
+    display : flex;
+    justify-content : space-between;
+}
+/* Ajout du css header */
+.liens-page {
+    display : flex;
+    flex-direction : row;
+    list-style : none;
+}
+/* Ajout de la classe de navigation de la page hébergements et activités */
+#hébergements {
+    margin : 0px 70px 0px 0px;
+    padding : 0px 0px 0px 0px;
+}
+/* Ajout de la marge entre les deux liens hébergements et activités */
+.liens-page li a {
+    text-decoration : none;
+}
+/* Retire ligne sous les liens hébergements et activités */
+.liens-page li a:link {
+    color : black;
+}
+/* Choix de la couleur des liens hébergements et activités */
+.liens-page li a:visited { 
+    color : black;
+}
+/* Choix de la couleur des liens hébergements et activités une fois cliqués */
+.liens-page li a:hover {
+    color : blue;
+}
+/* Choix de la couleur des liens hébergements et activités avec souris dessus */
+.formulaire {
+    border-radius: 20px;
+    padding: 5px;
 
+}
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
