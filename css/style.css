@@ -5,9 +5,8 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-* {
-    border : 1px solid orange; 
- }
+
+
  /* Ajout de bordures pour m'aider avec les marges, à supprimer ensuite */
 .top-header {
     display : flex;
@@ -41,11 +40,43 @@
     color : blue;
 }
 /* Choix de la couleur des liens hébergements et activités avec souris dessus */
+
 .formulaire {
-    border-radius: 20px;
-    padding: 5px;
+    display : flex;
+    margin : 0px 0px 20px 0px;
+}
+/* Mise en ligne des éléments de la barre de recherche */
+
+#logomap {
+    border-radius : 10px 0px 0px 10px;
+    background-color : #F2F2F2;
+    height : 14px;
+    width : 12px;
+    margin : 0px -5px -12px 0px;
+    padding : 10px 10px 10px 10px;
+}
+/* Ajout background et positionnement du logo map */
+#lieu {
+    border-radius : 0px 0px 0px 0px;
+    height : 30px;
+    width : 200px;
+    border: 1.5px solid #F2F2F2;
+    
+}
+
+#barrerecherche {
+    border-radius : 0px 10px 10px 0px;
+    background-color : #0065FC;
+    color : white;
+    height : 34px;
+    width : 100px;
+    margin : 0px 0px 0px -4px;
+    border : 0;
+    outline : 0;
 
 }
+
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
