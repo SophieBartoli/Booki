@@ -7,11 +7,12 @@
     <title>Booki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="'https://fonts.googleapis.com/css2?family=Raleway&family=Tilt+Prism&display=swap' rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    
         
 </head>
 
@@ -21,35 +22,52 @@
             <div class="top-header">
                 <img id="logobooki" src="images/logo/Booki.png" alt="logo booki"/>
             <!-- Ajout logo Booki dans header -->
+
                 <nav>
-                    <ul class = "liens-page">
-                        <li id = "hébergements"> <a href = "#"> Hébergements </a> </li>
-                        <li id = "activités"> <a href = "#"> Activités </a> </li>
+                    <ul class="liens-page">
+                        <li id="hébergements"> <a href = "#"> Hébergements </a> </li>
+                        <li id="activités"> <a href = "#"> Activités </a> </li>
                     </ul>
                 </nav>
             <!-- Ajout liens navigation hébergements et activités-->
+
             </div>
         
             <div class="bottom-header">
                 <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
-                <p> En plein centre-ville ou en pleine nature </p>
+                <p id="heroheader"> En plein centre-ville ou en pleine nature </p>
             </div> 
             <!-- Ajout de la Hero Header sous le logo -->
 
             <div class="formulaire">
                 <form method="Post">
-                <img id="logomap" src="images/logo/logomap.png" alt="logo map"/> 
-                <input id="lieu" type="text">
-                <input id="barrerecherche" type="submit" value="Rechercher">
+                    <i class="fa-solid fa-location-dot" id="logomap"></i>
+                    <input id="lieu" type="text">
+                    <input id="barrerecherche" type="submit" value="Rechercher">
                 </form>
             </div>
             <!-- Ajout du formulaire de recherche -->
-            <div class="filters" >
 
-            </div>
+            <nav>
+                <ul class="filters">
+                    <li id="Filtres"> Filtres </li>
+                    <li id="Économique">  <i class="fa-solid fa-money-bill-wave"></i> <a href = "#"> Économique </a> </li>
+                    <li id="Familial"> <i class="fa-solid fa-person"></i> <a href = "#"> Familial </a> </li>
+                    <li id="Romantique"> <i class="fa-solid fa-heart"></i> <a href = "#"> Romantique </a> </li>
+                    <li id="Nospépites"> <i class="fa-solid fa-fire"></i> <a href = "#"> Nos pépites </a> </li>
+                </ul>
+             </nav>
+             <!-- Ajout des filtres -->
 
+             <div class="paragraphefinal">
+                <i class="fa-solid fa-info" id="logoinformation"></i>
+                <p id=logementsville> Plus de 500 logements sont disponibles dans cette ville </p>
+             </div>
+             <!-- Ajout du dernier paragraphe -->
 
-        </header>
+            </header>
+            <!-- Fin du header-->
+
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
