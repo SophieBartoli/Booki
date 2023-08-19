@@ -7,6 +7,12 @@
 }
 /* Ajout de la police d'écriture */
 
+head {
+    display: flex;
+    justify-content: center;
+}
+
+
 a:hover {
     cursor : default;
 }
@@ -15,13 +21,15 @@ a:hover {
 .top-header {
     display : flex;
     justify-content : space-between;
+
 }
 /* Ajout du css header */
 
 #logobooki {
     height : 25px;
     width : auto;
-    margin : 40px 0px 0px -5px;
+    margin : 40px 0px 0px 0px;
+
 }
 /* Choix taille du logo Booki */
 
@@ -64,13 +72,13 @@ a:hover {
 /* Choix de la couleur des liens hébergements et activités avec souris dessus */
 
 .bottom-header {
-    margin : 15px 0px 15px -5px;
+    margin : 15px 0px 15px 0px;
     padding : 15px 0px 15px 0px; 
 }
 /* Ajout espacement entre top header et bottom header */
 
 h1 {
-    font-size : 1.3em;
+    font-size : 1.25em;
 }
 /* Choix taille de police h1 */
 
@@ -86,8 +94,9 @@ h1 {
 /* Mise en ligne des éléments de la barre de recherche */
 
 #logomap {
-    margin : 0px -4px 0px -5px;
-    padding : 8px 13px 10px 13px;
+    margin : 0px -4px 0px 0px;
+    padding : 14px 13px 15px 13px;
+    font-size : 15px;
     border-radius : 10px 0px 0px 10px;
     background-color : #F2F2F2;
     color : black;
@@ -96,7 +105,7 @@ h1 {
 
 #lieu {
     border-radius : 0px 0px 0px 0px;
-    height : 30px;
+    height : 40px;
     width : 200px;
     border: 1.5px solid #F2F2F2;
 }
@@ -106,7 +115,7 @@ h1 {
     border-radius : 0px 10px 10px 0px;
     background-color : #0065FC;
     color : white;
-    height : 34px;
+    height : 44px;
     width : 100px;
     margin : 0px 0px 0px -4px;
     border : 0;
@@ -118,7 +127,7 @@ h1 {
     display : flex;
     flex-direction : row;
     list-style : none;
-    margin : 40px 10px 40px -40px;
+    margin : 40px 10px 30px 0px;
 }
 /* Disposition de la barre des filtres */
 
@@ -141,9 +150,9 @@ h1 {
 #Familial,
 #Romantique,
 #Nospépites {
-    margin : 0px 5px 0px 5px;
+    margin : 0px 15px 0px 0px;
     padding : 5px 15px 5px 15px;
-    border : 2px solid #F2F2F2;
+    border : 2px solid #D9D9D9;
     border-radius : 20px 20px 20px 20px;
     font-size : 1em;
 }
@@ -159,14 +168,14 @@ h1 {
 
 
 .filters i {
-    margin : 5px 7px 5px 3px;
+    margin : 5px 7px 5px 0px;
     color : #0065FC;
 }
 /* mise en forme des logos pour chaque filtre */
 
 #Filtres {
     font-size : 1em;
-    margin : 0px 0px 0px 0px;
+    margin : 0px 10px 0px -40px;
     padding : 10px 10px 0px 0px;
     font-weight : bold; 
 }
@@ -176,23 +185,23 @@ h1 {
     display : flex;
     flex-direction : row; 
     align-items : center;
-    margin : 0px 0px 0px -5px; 
-    border : 2px solid orange;
+    margin : 0px 0px 30px 0px; 
 }
 /* Positionnement du dernier paragraphe du header */
 
-#logoinformation {
-    margin : 10px 10px 10px 0px;
-    padding : 5px 10px 5px 10px;
-    height : 0.7em;
-    width : 0.7em; 
-    border : 1px solid orange;
 
+#logoinformation {
+    margin : 5px 10px 5px 0px; 
+    padding : 6px 9px 6px 9px;
+    font-size : 11px;
+    border-radius : 50%;
+    border : 2px solid #D9D9D9;
+    color : #0065FC;
 }
+
 
 #logementsville {
     font-size : 1em;
-    border : 1px solid orange;
 }
 
 
