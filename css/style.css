@@ -7,6 +7,9 @@
 }
 /* Ajout de la police d'écriture */
 
+
+/***** Header ******/
+
 head {
     display: flex;
     justify-content: center;
@@ -209,6 +212,7 @@ h1 {
 
 
 
+/***** Main  *****/
 
 
 :root {
@@ -221,8 +225,6 @@ h1 {
     color: var(--main-color);
 }
 /* Choix couleurs de bases */
-
-
 
 
 body {
@@ -425,7 +427,7 @@ body {
 /* disposition de toutes les cards dans la section activités */
 
 #vieuxportcard {
-    margin : 0px 20px 0px 45px;
+    margin : 0px 30px 0px 45px;
 }
 /* disposition de la première card vieuxport */
 
@@ -433,10 +435,11 @@ body {
 .activités-cards {
     box-sizing: border-box;
     border-radius: 20px;
-    margin : 0px 20px 0px 0px;
+    margin : 0px 30px 0px 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    box-shadow : 0px 10px 20px  #D9D9D9;
+    box-shadow : 0px 8px 30px  #D9D9D9;
     height : 470px;
+    width : 100%;
 }
 /* esthétique de chaque card activité */
 
@@ -447,7 +450,8 @@ body {
 /* esthétique image et texte à l'intérieur des cards activités */
 
 .carddescription {
-    margin : 15px 0px 15px 15px;
+    margin : 20px 0px 15px 15px;
+    font-size : 1em;
 }
 /* esthétique du h3 description de l'image dans les cards activités */
 
@@ -460,6 +464,37 @@ body {
 /* esthétique de l'image dans les cards activités */
 
 
+/******** Footer *****/
+
+.footer {
+    display : flex;
+    justify-content : space-between;
+    background-color: var(--main-bg-color);
+}
+/* Esthétique du conteneur footer */
+
+.footersections {
+    width : 30%;
+    padding : 0px 0px 0px 30px;
+}
+/* Esthétique des différentes sections dans le footer */
+
+.footerlinks a {
+    text-decoration : none;
+    color : black;
+}
+/* Esthétique des liens dans les sections du footer */
+
+.footerlinks a:hover {
+    color : black;
+    cursor : pointer;
+}
+/* Esthétique des liens dans les sections du footer lorsque curseur dessus */
+
+.footerlinks a:visited {
+    color : black;
+}
+/* Esthétique des liens dans les sections du footer lorsque cliqués */
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
