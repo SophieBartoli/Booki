@@ -10,12 +10,6 @@
 
 /***** Header ******/
 
-head {
-    display: flex;
-    justify-content: center;
-}
-
-
 a:hover {
     cursor : default;
 }
@@ -31,7 +25,7 @@ a:hover {
 #logobooki {
     height : 25px;
     width : auto;
-    margin : 40px 0px 0px 0px;
+    margin : 20px 0px 0px 0px;
 
 }
 /* Choix taille du logo Booki */
@@ -124,6 +118,10 @@ h1 {
     border : 0;
     outline : 0;
     cursor : pointer;
+}
+
+#iconeloupe {
+    visibility : hidden;
 }
 /* ESthétique bouton de recherche dans barre de recherche */
 
@@ -454,10 +452,12 @@ body {
     margin : 0px 30px 0px 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     box-shadow : 0px 8px 30px  #D9D9D9;
-    height : 470px;
     width : 100%;
 }
 /* esthétique de chaque card activité */
+.activités-cards img {
+    height : 470px;
+}
 
 .contenu-cards-activités {
     display : flex;
@@ -520,6 +520,29 @@ body {
 @media (max-width: 1024px) {
     
 
+    .filtercontainer {
+    display : flex;
+    flex-direction : column;
+    }
+
+    #uloffilters {
+        padding : 0px 0px 0px 0px;
+    }
+
+    #Économique,
+    #Familial,
+    #Romantique,
+    #Nospépites {
+    margin : -10px 15px 10px 0px;
+    }
+
+    #Économique:active,
+    #Familial:active,
+    #Romantique:active,
+    #Nospépites:active {
+    background-color : #DEEBFF;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -527,6 +550,11 @@ body {
     .hebergements {
         width: 100%;
     }
+
+    .main-container {
+    padding: 0 30px;
+    }
+
 
     .populaires {
         width: 100%;
@@ -550,9 +578,126 @@ body {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-}
+
+    .contenu-cards-activités img {
+        height : 200px;
+    }
+    }
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
-}
+/* ... */
+
+   
+
+    .top-header {
+        display : flex;
+        flex-direction : column;
+        align-items: center;
+        width : 100%;
+    }
+
+
+    #logobooki {
+        height : auto;
+        width : 18%;
+        margin : 30px 0px 0px 0px;
+        
+
+    }
+
+    .liens-page {
+        display : flex;
+        list-style : none;
+        margin : 0px 0px 0px 0px;
+        padding : 0px 0px 0px 0px;
+        font-size : 1.2em;
+        width : 100%;
+    }
+
+    .liensheadernav {
+        margin : 30px 0px 0px 0px;;
+        width : 100%;
+
+    }
+
+
+
+    #hébergements {
+        margin : 0px 0px 0px 0px;
+        padding : 0px 0px 15px 0px;
+        color : #0065FC;
+        border-bottom : 2px solid #0065FC;
+        width : 50%;
+        text-align : center;
+    }
+
+    #hébergements a {
+        color : #0065FC;
+
+    }
+    
+
+    #activités {
+        width : 50%;
+        text-align : center;
+        padding : 0px 0px 15px 0px;
+        border-bottom : 2px solid #F2F2F2;
+    }
+
+/* Media Queries pour le top-header */
+
+    .bottom-header,
+    .formulaire,
+    .filtercontainer,
+    .paragraphefinal {
+        margin : 0 30px;
+    }
+
+    h1 {
+        font-size : 1.4em;
+    }
+    
+    .formulaire {
+        width : 100%;
+        height : auto;
+    }
+
+
+
+
+
+    .filters {
+    flex-wrap : wrap;
+    }
+
+    .all-activites-cards{
+        flex-wrap : wrap;
+    }
+    
+   
+
+    body {
+        padding : 0px;
+        margin : 0px;
+    }
+
+    
+    .main-container {
+        width: 100%;
+        padding: 0px;
+        margin : 0px;
+    }
+
+    .footer {
+        display : flex;
+        flex-direction : column;
+        justify-content : space-between;
+        background-color: var(--main-bg-color);
+    }
+    /* Esthétique du conteneur footer */
+
+
+    } 
