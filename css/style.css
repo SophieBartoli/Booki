@@ -803,53 +803,100 @@ body {
     }
 
     .main-container {
-        width: 100%;
-        padding: 0px;
+        width : 100%;
+        padding : 0px;
         margin : 0px;
     }
-
-
+    .hebergements-and-populaires section {
+        padding : 0px;
+        margin : 0px;
+        border-radius : 0px 0px 0px 0px;
+    }
 
     .populaires {
         position : absolute;
-        border : 2px solid purple;
-        padding : 1px 1px 1px 1px;
-    }
-
-    .hebergements-and-populaires section {
-        padding: 0px;
-    }
-
-    .hebergements {
-        margin : 500px 0px 0px 0px;
+        padding : 0px 0px 0px 0px;
     }
 
     .populaires-title {
-        margin: 0;
-        border: 2px solid green;
+        display : flex;
+        justify-content : space-between;
+        align-items : center;
+    }
+
+    #headerpopulaires {
+        display : flex;
+        justify-content : space-between;
+        align-items : center;
+        margin : 20px 30px 10px 30px;
     }
 
     .populaires-cards {
-        border : 2px solid red;
         display : flex;
         flex-direction : column;
         align-items : center;
-        margin : 1px 1px 1px 1px;
+        margin : 0px 0px 0px 0px;
+        padding : 0px;
     }
 
-    .card {
-        border : 2px solid orange;
+    .populaires-cards .card {
+        margin : 10px;
         min-width : 85%;
-        margin : -10px 0px -10px 0px;
     }
 
     .card-content  {
-        border : 2px solid pink;
     }
 
+    #premiere-card {
+        margin-top : 0;
+    }
 
+    #dernier-card {
+       margin-bottom : 40px;
+    }
 
+    .populaires-cards .card-title {
+        font-size : 0.95em;
+    }
 
+    .hebergements-and-populaires .hebergements {
+        margin-top : 586px;
+        padding-top : 35px;
+        background-color : white;
+    }
+
+    .hebergement-cards {
+        padding-top : 15px;
+    }
+
+    .hebergement-cards .card {
+        margin : 10px;
+        min-width : 85%;
+        margin : 0px 0px 20px 0px;
+    }
+
+    #afficherplus {
+        padding : 0;
+        margin : 0px 20px 0px 20px;
+    }
+
+    .all-activites-cards {
+        flex-direction : column;
+        margin : 0px 0px 50px 0px;
+        align-items : center;
+    }
+
+    .activités-title {
+        display : block;
+        margin-left : 30px;
+    }
+
+    .activités-cards,
+    #vieuxportcard {
+        width : 85%;
+        margin : 0 0 15px 0;
+    }
+    
 
 
 
@@ -857,9 +904,14 @@ body {
         display : flex;
         flex-direction : column;
         justify-content : space-between;
-        background-color: var(--main-bg-color);
+        background-color : var(--main-bg-color);
+        padding: 10px 5px 10px 5px;
     }
     /* Esthétique du conteneur footer */
-
+    
+    .footersections {
+        width : 100%;
+        padding : 0px 0px 0px 30px;
+    }
 
     } 
