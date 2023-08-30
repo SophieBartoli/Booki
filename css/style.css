@@ -193,6 +193,7 @@ h1 {
 #Filtres {
     font-size : 1em;
     font-weight : bold;
+    margin : 7px 0px 3px 0px;
 }
 /* Esthétique du mot Filtres */
 
@@ -656,11 +657,19 @@ body {
     .formulaire,
     .filtercontainer,
     .paragraphefinal {
-        margin : 0 30px;
+        margin : 0 20px;
     }
+    
+/* espacement élements gauche et droite du header */
 
     h1 {
         font-size : 1.4em;
+
+    }
+
+    #heroheader {
+        font-weight : 500;
+        margin : -5px 0px 20px 0px;
     }
     
     .searchform {
@@ -714,31 +723,135 @@ body {
         color : white;
     }
 
+    /* Media queries de la barre de recherche */
 
-
-
+    #Filtres {
+        font-size : 1.2em;
+        font-weight : bold;
+    }
 
     .filters {
-    flex-wrap : wrap;
-    }
-
-    .all-activites-cards{
         flex-wrap : wrap;
     }
+
+    #uloffilters {
+        justify-content : space-between;
+
+    }
+
+    #Économique,
+    #Familial,
+    #Romantique,
+    #Nospépites {
+        display : flex;
+        margin : 0px 0px 20px 0px;
+        padding : 0px 15px 0px 0px;
+        align-items : center; 
+        border : 2px solid #D9D9D9;
+        border-radius : 50px 50px 50px 50px;
+        font-size : 1em;
+        width : 43%;
+        height : 45px;
+        font-size : 0.9em;
+    }
     
-   
+    #Romantique,
+    #Nospépites {
+        margin : 0px 0px 0px 0px;
+    }
+
+    #Économique a,
+    #Familial a,
+    #Romantique a,
+    #Nospépites a {
+        display : inline-block;
+    }
+
+    .filters i {
+   padding : 0px 5px 0px 15px;
+    color : #0065FC;
+    font-size : 1.4em;
+    }
+
+    /* Media queries pour les filtres */
+
+    #logementsville {
+        width : 100%;
+        font-size : 1em;
+        font-weight : 500;
+    }
+
+    #logoinformation {
+        font-size : 9px;
+        margin : 5px 10px 5px 20px; 
+        padding : 6px 9px 6px 9px;
+        border : 1px solid #D9D9D9;
+    }
+
+    .paragraphefinal {
+        margin : 0px 0px 20px 0px;
+    }
+
+    /* Media queries pour la phrase 500 logements */
+
+    /** Fin Media Queries du header **/
+
 
     body {
         padding : 0px;
         margin : 0px;
     }
 
-    
     .main-container {
         width: 100%;
         padding: 0px;
         margin : 0px;
     }
+
+
+
+    .populaires {
+        position : absolute;
+        border : 2px solid purple;
+        padding : 1px 1px 1px 1px;
+    }
+
+    .hebergements-and-populaires section {
+        padding: 0px;
+    }
+
+    .hebergements {
+        margin : 500px 0px 0px 0px;
+    }
+
+    .populaires-title {
+        margin: 0;
+        border: 2px solid green;
+    }
+
+    .populaires-cards {
+        border : 2px solid red;
+        display : flex;
+        flex-direction : column;
+        align-items : center;
+        margin : 1px 1px 1px 1px;
+    }
+
+    .card {
+        border : 2px solid orange;
+        min-width : 85%;
+        margin : -10px 0px -10px 0px;
+    }
+
+    .card-content  {
+        border : 2px solid pink;
+    }
+
+
+
+
+
+
 
     .footer {
         display : flex;
