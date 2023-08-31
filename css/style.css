@@ -26,7 +26,6 @@ a:hover {
     height : 25px;
     width : auto;
     margin : 20px 0px 0px 0px;
-
 }
 /* Choix taille du logo Booki */
 
@@ -232,7 +231,6 @@ h1 {
 
 /***** Main  *****/
 
-
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -426,9 +424,9 @@ body {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-/* Fin du CSS de la section populaires */
 
 
+/******* Activités ******/
 
 .activités-title {
     font-size: 22px;
@@ -440,7 +438,7 @@ body {
     display : flex;
     flex-direction : row;
     justify-content : space-around;
-    margin : 0px 0px 100px 0px
+    margin : 0px 0px 100px 0px;
 }
 /* disposition de toutes les cards dans la section activités */
 
@@ -459,9 +457,11 @@ body {
     width : 100%;
 }
 /* esthétique de chaque card activité */
+
 .activités-cards img {
     height : 470px;
 }
+/* Taille des images des cards activités */
 
 .contenu-cards-activités {
     display : flex;
@@ -594,9 +594,9 @@ body {
 @media (max-width: 767.98px) {
 /* ... */
 
-   
+    /**** Header *****/
 
-    .top-header {
+   .top-header {
         display : flex;
         flex-direction : column;
         align-items: center;
@@ -627,8 +627,6 @@ body {
 
     }
 
-
-
     #hébergements {
         margin : 0px 0px 0px 0px;
         padding : 0px 0px 15px 0px;
@@ -643,7 +641,6 @@ body {
 
     }
     
-
     #activités {
         width : 50%;
         text-align : center;
@@ -651,7 +648,9 @@ body {
         border-bottom : 2px solid #F2F2F2;
     }
 
-/* Media Queries pour le top-header */
+    .liens-page a:hover {
+        display : none;
+    }
 
     .bottom-header,
     .formulaire,
@@ -660,8 +659,6 @@ body {
         margin : 0 20px;
     }
     
-/* espacement élements gauche et droite du header */
-
     h1 {
         font-size : 1.4em;
 
@@ -672,6 +669,9 @@ body {
         margin : -5px 0px 20px 0px;
     }
     
+
+    /*** Barre de recherche ***/
+
     .searchform {
         width : 100%;
         height : auto;
@@ -723,7 +723,8 @@ body {
         color : white;
     }
 
-    /* Media queries de la barre de recherche */
+
+    /*** Filtres ***/
 
     #Filtres {
         font-size : 1.2em;
@@ -773,7 +774,9 @@ body {
     font-size : 1.4em;
     }
 
-    /* Media queries pour les filtres */
+    
+
+    /*** dernier paragraphe du header ***/
 
     #logementsville {
         width : 100%;
@@ -792,10 +795,8 @@ body {
         margin : 0px 0px 20px 0px;
     }
 
-    /* Media queries pour la phrase 500 logements */
 
-    /** Fin Media Queries du header **/
-
+    /****** Main ********/
 
     body {
         padding : 0px;
@@ -807,11 +808,15 @@ body {
         padding : 0px;
         margin : 0px;
     }
+
     .hebergements-and-populaires section {
         padding : 0px;
         margin : 0px;
         border-radius : 0px 0px 0px 0px;
     }
+
+
+    /*** Populaires ***/
 
     .populaires {
         position : absolute;
@@ -865,6 +870,9 @@ body {
         background-color : white;
     }
 
+
+    /*** Hébergements ***/
+
     .hebergement-cards {
         padding-top : 15px;
     }
@@ -898,7 +906,7 @@ body {
     }
     
 
-
+    /***** Footer *****/
 
     .footer {
         display : flex;
@@ -907,7 +915,7 @@ body {
         background-color : var(--main-bg-color);
         padding: 10px 5px 10px 5px;
     }
-    /* Esthétique du conteneur footer */
+   
     
     .footersections {
         width : 100%;
@@ -915,3 +923,8 @@ body {
     }
 
     } 
+
+    /* Fin du responsive */
+
+    
+/**** Fin code CSS ****/
