@@ -15,34 +15,54 @@ a:hover {
 }
 /* Choix du curseur universel */
 
+body {
+    margin : 0px 0px 0px 0px;
+}
+
 .top-header {
     display : flex;
     justify-content : space-between;
-
 }
 /* Ajout du css header */
-
-#logobooki {
-    height : 25px;
-    width : auto;
-    margin : 20px 0px 0px 0px;
-}
-/* Choix taille du logo Booki */
 
 .liens-page {
     display : flex;
     flex-direction : row;
     list-style : none;
-    margin : 10px 0px 0px 0px;
+    margin : 0px 0px 0px 0px;
+    padding : 0px 0px 0px 0px;
     font-size : 1em;
 }
 /* Ajout de la classe de navigation de la page hébergements et activités */
 
-#hébergements {
-    margin : 0px 70px 0px 0px;
-    padding : 0px 0px 0px 0px;
+#hebergements {
+    display : inline-block;
+    padding : 10px 100px 0px 0px;
+    width : 30px;
 }
-/* Ajout de la marge entre les deux liens hébergements et activités */
+/* Esthétique bloc hebergements */
+
+#activites {
+    display : inline-block;
+    width : 30px;
+    align-items : flex-end;
+    padding : 10px 100px 0px 0px;
+}
+/* Esthétique bloc activités */
+
+#hebergements a {
+    display : inline-block;
+    width : 430%;
+    text-align : center;
+}
+/* alignement du mot hebergement*/
+
+#activites a {
+    display : inline-block;
+    width : 430%;
+    text-align : center;
+}
+/* alignement du mot activites */
 
 .liens-page li a {
     text-decoration : none;
@@ -59,13 +79,27 @@ a:hover {
 }
 /* Choix de la couleur des liens hébergements et activités une fois cliqués */
 
-.liens-page a:hover {
+.liens-page #activites:hover,
+.liens-page #hebergements:hover {
     color : #0065FC;
     border-top : 3px solid #0065FC;
-    padding : 15px 0px 0px 0px;
+    padding-top: 7px;
     cursor : pointer;
 }
 /* Choix de la couleur des liens hébergements et activités avec souris dessus */
+
+.liens-page #activites a:hover,
+.liens-page #hebergements a:hover {
+    cursor : pointer;
+}
+
+
+#logo-booki {
+    height : 25px;
+    width : auto;
+    margin : 30px 0px 0px 0px;
+}
+/* Choix taille du logo Booki */
 
 .bottom-header {
     margin : 15px 0px 15px 0px;
@@ -78,19 +112,19 @@ h1 {
 }
 /* Choix taille de police h1 */
 
-#heroheader {
+#hero-header {
     font-size : 1em;
 }
-/* Choix taille de police heroheader */ 
+/* Choix taille de police hero-header */ 
 
-.searchform {
+.search-form {
     display : flex;
     flex-direction : row;
     margin : 0px 0px 20px 0px;
 }
 /* Mise en ligne des éléments de la barre de recherche */
 
-#logomap {
+#logo-map {
     margin : 0px -4px 0px 0px;
     padding : 14px 13px 15px 13px;
     font-size : 15px;
@@ -108,7 +142,7 @@ h1 {
 }
 /* Esthétique saisie de lieu dans barre de recherche */
 
-#barrerecherche {
+#barre-recherche {
     border-radius : 0px 10px 10px 0px;
     background-color : #0065FC;
     color : white;
@@ -121,7 +155,7 @@ h1 {
 }
 /* Esthétique bouton de recherche dans barre de recherche */
 
-#barrerecherchesmartphone {
+#barre-recherche-smartphone {
     display : none;
 }
 /*Barre de recherche pour version responsive sur smartphone */
@@ -149,10 +183,10 @@ h1 {
 }
 /* mise en couleur des éléments liens */
 
-#Économique,
+#Economique,
 #Familial,
 #Romantique,
-#Nospépites {
+#Nos-pepites {
     margin : 0px 15px 0px 0px;
     padding : 5px 15px 5px 15px;
     border : 2px solid #D9D9D9;
@@ -161,10 +195,10 @@ h1 {
 }
 /* mise en forme des box liens des filtres */
 
-#Économique:hover,
+#Economique:hover,
 #Familial:hover,
 #Romantique:hover,
-#Nospépites:hover {
+#Nos-pepites:hover {
     background-color : #DEEBFF;
 }
 /* couleur du background lorsque souris dessus */
@@ -176,14 +210,14 @@ h1 {
 }
 /* mise en forme des logos pour chaque filtre */
 
-.filtercontainer {
+.filter-container {
     display : flex;
     flex-direction : row;
     margin : 0px 0px 0px 0px;
 }
 /* Esthétique du mot filtre et des ul */
 
-.filterword {
+.filter-word {
     display : flex;
     align-items : center;
 }
@@ -196,13 +230,13 @@ h1 {
 }
 /* Esthétique du mot Filtres */
 
-#uloffilters {
+#ul-of-filters {
     padding : 0px 0px 0px 20px;
 }
 /* espacement entre mot filtres et les boutons filtres */
 
 
-.paragraphefinal {
+.paragraphe-final {
     display : flex;
     flex-direction : row; 
     align-items : center;
@@ -211,7 +245,7 @@ h1 {
 /* Positionnement du dernier paragraphe du header */
 
 
-#logoinformation {
+#logo-information {
     margin : 5px 10px 5px 0px; 
     padding : 6px 9px 6px 9px;
     font-size : 11px;
@@ -222,7 +256,7 @@ h1 {
 /* Esthétique du logo information */
 
 
-#logementsville {
+#logements-ville {
     font-size : 1em;
 }
 /* Esthétique de la phrase 500 logements */
@@ -354,27 +388,27 @@ body {
 }
 /* espacement des ratings des cards hebergement */
 
-#afficherplus {
+#afficher-plus {
     padding : 20px 0px 0px 15px;
 }
 /* espacement lien afficher plus */
 
-#afficherplus a {
+#afficher-plus a {
     text-decoration : none;
 }
 /* enlèvement du surlignage du lien afficher plus */
 
-#afficherplus a:link {
+#afficher-plus a:link {
     color : black;
 }
 /*couleur du lien afficher plus */
 
-#afficherplus a:visited {
+#afficher-plus a:visited {
     color : black;
 }
 /*couleur du lien afficher plus lorsque cliqué */
 
-#afficherplus a:hover {
+#afficher-plus a:hover {
     cursor : pointer;
 }
 /*couleur du lien afficher plus lorsque curseur dessus */
@@ -428,7 +462,7 @@ body {
 
 /******* Activités ******/
 
-.activités-title {
+.activites-title {
     font-size: 22px;
     margin : 50px 0px 30px 45px;
 }
@@ -442,13 +476,13 @@ body {
 }
 /* disposition de toutes les cards dans la section activités */
 
-#vieuxportcard {
+#vieux-port-card {
     margin : 0px 30px 0px 45px;
 }
-/* disposition de la première card vieuxport */
+/* disposition de la première card vieux-port */
 
 
-.activités-cards {
+.activites-cards {
     box-sizing: border-box;
     border-radius: 20px;
     margin : 0px 30px 0px 0px;
@@ -458,24 +492,24 @@ body {
 }
 /* esthétique de chaque card activité */
 
-.activités-cards img {
+.activites-cards img {
     height : 470px;
 }
 /* Taille des images des cards activités */
 
-.contenu-cards-activités {
+.contenu-cards-activites {
     display : flex;
     flex-direction : column;
 }
 /* esthétique image et texte à l'intérieur des cards activités */
 
-.carddescription {
+.card-description {
     margin : 20px 0px 15px 15px;
     font-size : 1em;
 }
 /* esthétique du h3 description de l'image dans les cards activités */
 
-.contenu-cards-activités img {
+.contenu-cards-activites img {
     width : 100%;
     height : 400px;
     object-fit: cover;
@@ -493,28 +527,32 @@ body {
 }
 /* Esthétique du conteneur footer */
 
-.footersections {
+.footer-sections {
     width : 30%;
     padding : 0px 0px 0px 30px;
 }
 /* Esthétique des différentes sections dans le footer */
 
-.footerlinks a {
+.footer-links a {
     text-decoration : none;
     color : black;
 }
 /* Esthétique des liens dans les sections du footer */
 
-.footerlinks a:hover {
+.footer-links a:hover {
     color : black;
     cursor : pointer;
 }
 /* Esthétique des liens dans les sections du footer lorsque curseur dessus */
 
-.footerlinks a:visited {
+.footer-links a:visited {
     color : black;
 }
 /* Esthétique des liens dans les sections du footer lorsque cliqués */
+
+footer h2 {
+    font-size : 1.2em;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -524,26 +562,25 @@ body {
 @media (max-width: 1024px) {
     
 
-    .filtercontainer {
-    display : flex;
+    .filter-container {
     flex-direction : column;
     }
 
-    #uloffilters {
+    #ul-of-filters {
         padding : 0px 0px 0px 0px;
     }
 
-    #Économique,
+    #Economique,
     #Familial,
     #Romantique,
-    #Nospépites {
+    #Nos-pepites {
     margin : -10px 15px 10px 0px;
     }
 
-    #Économique:active,
+    #Economique:active,
     #Familial:active,
     #Romantique:active,
-    #Nospépites:active {
+    #Nos-pepites:active {
     background-color : #DEEBFF;
     }
 
@@ -583,7 +620,7 @@ body {
         font-size: 13px;
     }
 
-    .contenu-cards-activités img {
+    .contenu-cards-activites img {
         height : 200px;
     }
     }
@@ -604,58 +641,73 @@ body {
     }
 
 
-    #logobooki {
+    #logo-booki {
         height : auto;
         width : 18%;
         margin : 30px 0px 0px 0px;
-        
-
     }
 
     .liens-page {
         display : flex;
         list-style : none;
         margin : 0px 0px 0px 0px;
-        padding : 0px 0px 0px 0px;
+        padding : 7px 0px 0px 0px;
         font-size : 1.2em;
         width : 100%;
     }
 
-    .liensheadernav {
+    #hebergements a {
+        display : inline;
+    } 
+
+    #activites a {
+        display : inline;
+    }
+
+    .liens-header-nav {
         margin : 30px 0px 0px 0px;;
         width : 100%;
 
     }
 
-    #hébergements {
+    #hebergements {
         margin : 0px 0px 0px 0px;
-        padding : 0px 0px 15px 0px;
+        padding : 0px 0px 12.5px 0px;
         color : #0065FC;
-        border-bottom : 2px solid #0065FC;
+        border-bottom : 2px solid #F2F2F2;
         width : 50%;
         text-align : center;
-    }
-
-    #hébergements a {
-        color : #0065FC;
-
     }
     
-    #activités {
+    #activites {
         width : 50%;
         text-align : center;
-        padding : 0px 0px 15px 0px;
+        padding : 0px 0px 12.5px 0px;
         border-bottom : 2px solid #F2F2F2;
     }
+   
+    #hebergements:active,
+    #activites:active {
+        border-top : none;
+    }
 
-    .liens-page a:hover {
-        display : none;
+    .liens-page #activites:hover,
+    .liens-page #hebergements:hover {
+        color : #0065FC;
+        border-top : none;
+        border-bottom : 2px solid #0065FC;
+        padding : 0px 0px 12.5px 0px;
+    }
+
+    .liens-page #activites a:hover,
+    .liens-page #hebergements a:hover {
+        color : #0065FC;
     }
 
     .bottom-header,
     .formulaire,
-    .filtercontainer,
-    .paragraphefinal {
+    .filter-container,
+    .paragraphe-final {
         margin : 0 20px;
     }
     
@@ -664,7 +716,7 @@ body {
 
     }
 
-    #heroheader {
+    #hero-header {
         font-weight : 500;
         margin : -5px 0px 20px 0px;
     }
@@ -672,13 +724,13 @@ body {
 
     /*** Barre de recherche ***/
 
-    .searchform {
+    .search-form {
         width : 100%;
         height : auto;
         justify-content : center;
     }
 
-    #logomap {
+    #logo-map {
         margin : 0px 0px 0px 0px;
         padding : 0px 0px 0px 0px;
         border-radius : 15px 0px 0px 15px;
@@ -698,11 +750,11 @@ body {
         border: 1.5px solid #F2F2F2;
     }
 
-    #barrerecherche { 
+    #barre-recherche { 
        display : none;
     }
 
-    #barrerecherchesmartphone {
+    #barre-recherche-smartphone {
         display : block;
         position : absolute;
         right : 20px;
@@ -719,7 +771,7 @@ body {
         
     }
 
-    #logoloupe {
+    #logo-loupe {
         color : white;
     }
 
@@ -735,15 +787,15 @@ body {
         flex-wrap : wrap;
     }
 
-    #uloffilters {
+    #ul-of-filters {
         justify-content : space-between;
 
     }
 
-    #Économique,
+    #Economique,
     #Familial,
     #Romantique,
-    #Nospépites {
+    #Nos-pepites {
         display : flex;
         margin : 0px 0px 20px 0px;
         padding : 0px 15px 0px 0px;
@@ -757,14 +809,14 @@ body {
     }
     
     #Romantique,
-    #Nospépites {
+    #Nos-pepites {
         margin : 0px 0px 0px 0px;
     }
 
-    #Économique a,
+    #Economique a,
     #Familial a,
     #Romantique a,
-    #Nospépites a {
+    #Nos-pepites a {
         display : inline-block;
     }
 
@@ -778,20 +830,20 @@ body {
 
     /*** dernier paragraphe du header ***/
 
-    #logementsville {
+    #logements-ville {
         width : 100%;
         font-size : 1em;
         font-weight : 500;
     }
 
-    #logoinformation {
+    #logo-information {
         font-size : 9px;
         margin : 5px 10px 5px 20px; 
         padding : 6px 9px 6px 9px;
         border : 1px solid #D9D9D9;
     }
 
-    .paragraphefinal {
+    .paragraphe-final {
         margin : 0px 0px 20px 0px;
     }
 
@@ -829,7 +881,7 @@ body {
         align-items : center;
     }
 
-    #headerpopulaires {
+    #header-populaires {
         display : flex;
         justify-content : space-between;
         align-items : center;
@@ -849,8 +901,6 @@ body {
         min-width : 85%;
     }
 
-    .card-content  {
-    }
 
     #premiere-card {
         margin-top : 0;
@@ -883,7 +933,7 @@ body {
         margin : 0px 0px 20px 0px;
     }
 
-    #afficherplus {
+    #afficher-plus {
         padding : 0;
         margin : 0px 20px 0px 20px;
     }
@@ -894,13 +944,13 @@ body {
         align-items : center;
     }
 
-    .activités-title {
+    .activites-title {
         display : block;
         margin-left : 30px;
     }
 
-    .activités-cards,
-    #vieuxportcard {
+    .activites-cards,
+    #vieux-port-card {
         width : 85%;
         margin : 0 0 15px 0;
     }
@@ -917,8 +967,8 @@ body {
     }
    
     
-    .footersections {
-        width : 100%;
+    .footer-sections {
+        width : 90%;
         padding : 0px 0px 0px 30px;
     }
 
